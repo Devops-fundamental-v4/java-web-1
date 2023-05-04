@@ -6,7 +6,6 @@ steps:
   inputs:
     SonarCloud: 'SONAR-CLOUD'
     organization: 'devops-fundamental-v4'
-    scannerMode: 'Other'
     projectKey: Devops-fundamental-v4_java-web-1
     projectName: java-web-1
   displayName: 'SonarCloud'
