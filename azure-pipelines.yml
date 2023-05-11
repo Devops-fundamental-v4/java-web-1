@@ -2,7 +2,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
 - task: Gradle@3
   inputs:
     gradleWrapperFile: 'gradlew'
@@ -13,6 +12,9 @@ steps:
     sonarQubeRunAnalysis: false
     spotBugsAnalysis: false
   displayName: Build
+   
+   
+
 # - task: SonarCloudPrepare@1
 #   inputs:
 #     SonarCloud: 'SONAR-CLOUD'
@@ -30,3 +32,8 @@ steps:
 #     sqGradlePluginVersionChoice: 'specify'
 #     sonarQubeGradlePluginVersion: '3.3'
 #     spotBugsAnalysis: false
+- task: Docker@2
+  inputs:
+    containerRegistry: 'docker-service'
+    command: 'login'
+    
