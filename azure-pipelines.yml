@@ -65,6 +65,6 @@ jobs:
     inputs:
       connectionType: 'None'
       command: 'apply'
-      arguments: 'run springclinic --image=crisacevedo/spring-clinic:23'
+      arguments: 'create deployment springclinic2 --image=crisacevedo/spring-clinic:23'
       secretType: 'dockerRegistry'
       containerRegistryType: 'Azure Container Registry'
