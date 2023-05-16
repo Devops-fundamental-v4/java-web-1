@@ -64,7 +64,7 @@ jobs:
   - task: Kubernetes@1
     inputs:
       connectionType: 'None'
-      command: 'apply'
-      arguments: 'create deployment springclinic2 --image=crisacevedo/spring-clinic:23'
+      command: 'create'
+      arguments: 'deployment springclinic2 --image=crisacevedo/spring-clinic:23'
       secretType: 'dockerRegistry'
       containerRegistryType: 'Azure Container Registry'
